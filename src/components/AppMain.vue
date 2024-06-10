@@ -2,8 +2,7 @@
 
     <main>
         <div class="black-section">
-            <h1>
-                --> Content goes here <-- </h1>
+            <h1>--> Content goes here <-- </h1>
         </div>
         <div class="blue-section">
             <section class="d-flex" v-for="(info, index) in infos" :key="index">
@@ -80,7 +79,7 @@ export default {
 }
 
 .black-section>h1 {
-    color: white;
+    color: #ffffff;
     padding-left: 8rem;
 }
 
@@ -92,10 +91,12 @@ export default {
 .blue-section {
     background-color: #0282f9;
     height: 30vh;
-    color: white;
+    color: #ffffff;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 5rem;
+    padding: 5rem;
 }
 
 .info {
@@ -111,6 +112,8 @@ p{
 
 .logo-grande {
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .center-section {
@@ -138,6 +141,7 @@ li {
 .list ul li:first-child {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .first-list ul li:nth-child(8) {

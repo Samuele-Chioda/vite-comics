@@ -35,13 +35,15 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 4rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
 }
 
 button {
     padding: 1rem;
     background-color: #303030;
     border: 3px solid #0282f9;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 1.2rem;
 }
