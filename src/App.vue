@@ -21,7 +21,6 @@ export default {
 }
 </script>
 
-<style lang="sass">
-@use'./style/general.scss
-<!-- @use   non riesco a importare il file scss -->
+<style lang="scss">
+@use'./assets/styles/general.scss';
 </style>
