@@ -4,21 +4,28 @@
             <button>Sign-up now!</button>
         </section>
         <section class="right-sec">
-            <h1>
-                Follow us
-            </h1>
-            <img src="../assets/img/img/footer-facebook.png" alt="">
-            <img src="../assets/img/img/footer-periscope.png" alt="">
-            <img src="../assets/img/img/footer-pinterest.png" alt="">
-            <img src="../assets/img/img/footer-twitter.png" alt="">
-            <img src="../assets/img/img/footer-youtube.png" alt="">
+            <h1>Follow us</h1>
+            <div v-for="(icon, index) in socialIcons" :key="index" class="social-icon">
+                <img :src="icon.src" :alt="icon.alt">
+            </div>
         </section>
     </footer>
 </template>
 
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data() {
+        return {
+            socialIcons: [
+                { src: '/src/assets/img/img/footer-facebook.png', alt: 'Facebook' },
+                { src: '/src/assets/img/img/footer-periscope.png', alt: 'Periscope' },
+                { src: '/src/assets/img/img/footer-pinterest.png', alt: 'Pinterest' },
+                { src: '/src/assets/img/img/footer-twitter.png', alt: 'Twitter' },
+                { src: '/src/assets/img/img/footer-youtube.png', alt: 'YouTube' }
+            ]
+        };
+    }
 }
 </script>
 
@@ -49,6 +56,7 @@ h1{
 
 .right-sec{
     display: flex;
+    align-items: center;
 }
 
 img{
