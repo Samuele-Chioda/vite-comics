@@ -1,5 +1,5 @@
 <template>
-    
+
     <header>
         <section class="logo">
             <img src="../assets/img/img/dc-logo.png" alt="logo">
@@ -21,7 +21,7 @@ export default {
     data() {
         return {
             menuItems: [
-                { text: 'Characters', url: '#'},
+                { text: 'Characters', url: '#' },
                 { text: 'Comics', url: '#' },
                 { text: 'Movies', url: '#' },
                 { text: 'Tv', url: '#' },
@@ -39,43 +39,41 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-header{
+header {
     padding: 2rem;
-    display:flex;
+    display: flex;
     justify-content: space-around;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul{
-    display:flex;
+ul {
+    display: flex;
 }
 
-li{
+li {
     list-style-type: none;
     margin-right: 2rem;
 }
 
-a{
-    color:black;
+a {
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
 }
 
-a:hover{
+a:hover {
     color: #0282f9;
 
 }
 
-li:hover{
+li:hover {
     border-bottom: 5px solid #0282f9;
     color: #0282f9;
 }
-
 </style>

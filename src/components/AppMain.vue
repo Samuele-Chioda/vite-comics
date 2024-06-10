@@ -6,31 +6,14 @@
                 --> Content goes here <-- </h1>
         </div>
         <div class="blue-section">
-            
-            <section>
-                <img class="info" src="../assets/img/img/buy-comics-digital-comics.png" alt="">
-                <p>Digital Comics</p>
-            </section>
-            <section>
-                <img class="info" src="../assets/img/img/buy-comics-merchandise.png" alt="">
-                <p>DC merchandise</p>
-            </section>
-            <section>
-                <img class="info" src="../assets/img/img/buy-comics-shop-locator.png" alt="">
-                <p>Locator</p>
-            </section>
-            <section>
-                <img class="info" src="../assets/img/img/buy-comics-subscriptions.png" alt="">
-                <p>Subscription</p>
-            </section>
-            <section>
-                <img class="info" src="../assets/img/img/buy-dc-power-visa.svg" alt="">
-                <p>Power Visa</p>
+            <section class="d-flex" v-for="(info, index) in infos" :key="index">
+                <img class="info" :src="info.src" :alt="info.alt">
+                <p>{{ info.text }}</p>
             </section>
         </div>
         <div class="center-section">
             <section id="lists">
-                <div class="list">
+                <div class="list first-list">
                     <ul>
                         <li v-for="(item, index) in lists[0]" :key="index">
                             {{ item }}
@@ -66,6 +49,13 @@ export default {
     name: 'AppMain',
     data() {
         return {
+            infos: [
+                { src: '/src/assets/img/img/buy-comics-digital-comics.png', alt: 'Digital Comics', text: 'Digital Comics' },
+                { src: '/src/assets/img/img/buy-comics-merchandise.png', alt: 'DC Merchandise', text: 'DC Merchandise' },
+                { src: '/src/assets/img/img/buy-comics-shop-locator.png', alt: 'Locator', text: 'Locator' },
+                { src: '/src/assets/img/img/buy-comics-subscriptions.png', alt: 'Subscription', text: 'Subscription' },
+                { src: '/src/assets/img/img/buy-dc-power-visa.svg', alt: 'Power Visa', text: 'Power Visa' }
+            ],
             lists: [
                 ["DC Comics", "Characters", "Movies", "Tv", "Games", "Videos", "News", "Shop", "Shop DC", "Shop DC Collectibles"]
             ],
@@ -79,6 +69,7 @@ export default {
     }
 }
 </script>
+
 
 <style lang="scss" scoped>
 .black-section {
@@ -107,10 +98,15 @@ export default {
     align-items: center;
 }
 
-.info{
-    width: 50%;
+.info {
+    width: 25%;
+    margin: 1rem;
 }
 
+p{
+    text-transform: uppercase;
+    align-self: center;
+}
 // da qui comincia la parte centrale del main
 
 .logo-grande {
@@ -126,16 +122,33 @@ export default {
 
 li {
     list-style-type: none;
+    margin-bottom: .5rem;
 }
 
 #lists {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .logo-grande {
     width: 50%;
 }
+
+.list ul li:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.first-list ul li:nth-child(8) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.d-flex{
+    display:flex;
+}
+
+
 </style>

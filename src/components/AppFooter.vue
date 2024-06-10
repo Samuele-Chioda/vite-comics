@@ -30,7 +30,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 footer {
     background-color: #303030;
     display: flex;
@@ -47,22 +46,21 @@ button {
     font-size: 1.2rem;
 }
 
-h1{
+h1 {
     text-transform: uppercase;
     color: #0282f9;
     margin-right: .5rem;
-    padding:0.5rem;
+    padding: 0.5rem;
 }
 
-.right-sec{
+.right-sec {
     display: flex;
     align-items: center;
 }
 
-img{
+img {
     margin-right: .5rem;
     width: 100%;
-    padding:.5rem
-}
+    padding: .5rem}
 
 </style>
