@@ -5,8 +5,31 @@
             <h1>
                 --> Content goes here <-- </h1>
         </div>
+        <div class="blue-section">
+            
+            <section>
+                <img class="info" src="../assets/img/img/buy-comics-digital-comics.png" alt="">
+                <p>Digital Comics</p>
+            </section>
+            <section>
+                <img class="info" src="../assets/img/img/buy-comics-merchandise.png" alt="">
+                <p>DC merchandise</p>
+            </section>
+            <section>
+                <img class="info" src="../assets/img/img/buy-comics-shop-locator.png" alt="">
+                <p>Locator</p>
+            </section>
+            <section>
+                <img class="info" src="../assets/img/img/buy-comics-subscriptions.png" alt="">
+                <p>Subscription</p>
+            </section>
+            <section>
+                <img class="info" src="../assets/img/img/buy-dc-power-visa.svg" alt="">
+                <p>Power Visa</p>
+            </section>
+        </div>
         <div class="center-section">
-            <section class="lists">
+            <section id="lists">
                 <div class="list">
                     <ul>
                         <li v-for="(item, index) in lists[0]" :key="index">
@@ -44,7 +67,7 @@ export default {
     data() {
         return {
             lists: [
-                ["DC Comics", "Characters", "Movies", "Tv", "Games", "Videos", "News"]
+                ["DC Comics", "Characters", "Movies", "Tv", "Games", "Videos", "News", "Shop", "Shop DC", "Shop DC Collectibles"]
             ],
             listsDue: [
                 ["DC", "Terms Of Us", "Privacy Policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CSPC Certificates", "Ratings", "Shop Help", "Contact Us"]
@@ -56,7 +79,6 @@ export default {
     }
 }
 </script>
-
 
 <style lang="scss" scoped>
 .black-section {
@@ -76,31 +98,44 @@ export default {
     background-repeat: no-repeat;
 }
 
+.blue-section {
+    background-color: #0282f9;
+    height: 30vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info{
+    width: 50%;
+}
+
 // da qui comincia la parte centrale del main
 
 .logo-grande {
     width: 50%;
 }
 
-.center-section{
+.center-section {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
     color: lightgray;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.list{
+#lists {
     width: 50%;
     display: flex;
-    
+    justify-content: space-evenly;
+
 }
 
-.logo-grande{
+.logo-grande {
     width: 50%;
 }
-
 </style>
