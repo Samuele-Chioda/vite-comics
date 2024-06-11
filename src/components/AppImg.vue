@@ -104,8 +104,6 @@ export default {
     margin: 0 auto;
     flex-wrap: wrap;
     padding: 2rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .card{
@@ -116,10 +114,14 @@ export default {
 
 p{
     color:white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
 }
 
 img{
     width: 100%;
+    height: auto;
 }
 
 </style>
