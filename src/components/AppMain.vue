@@ -80,7 +80,6 @@ export default {
 <style lang="scss" scoped>
 .black-section {
     background-color: black;
-    height: 25vh;
     display: flex;
     align-items: center;
 }
