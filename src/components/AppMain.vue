@@ -5,7 +5,7 @@
             <h1>--> Content goes here <-- </h1>
         </div>
         <div class="blue-section">
-            <section class="d-flex" v-for="(info, index) in infos" :key="index">
+            <section class="last-photo d-flex" v-for="(info, index) in infos" :key="index">
                 <img class="info" :src="info.src" :alt="info.alt">
                 <p>{{ info.text }}</p>
             </section>
@@ -145,11 +145,19 @@ li {
     text-transform: uppercase;
 }
 
+.last-photo img:last-child {
+    width: 4rem;
+}
+
 .first-list ul li:nth-child(8) {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 2rem;
     text-transform: uppercase;
+}
+
+.last-photo:last-of-type img.info {
+    width: 4rem;
 }
 
 .d-flex{
