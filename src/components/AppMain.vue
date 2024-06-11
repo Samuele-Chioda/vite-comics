@@ -142,12 +142,14 @@ li {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .first-list ul li:nth-child(8) {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 2rem;
+    text-transform: uppercase;
 }
 
 .d-flex{
