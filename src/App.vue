@@ -32,5 +32,6 @@ export default {
 
 body {
   font-size: .8rem;
+  font-family: sans-serif;
 }
 </style>

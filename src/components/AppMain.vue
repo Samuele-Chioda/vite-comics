@@ -2,7 +2,7 @@
 
     <main>
         <div class="black-section">
-            <h1>--> Content goes here <-- </h1>
+            <AppImg />
         </div>
         <div class="blue-section">
             <section class="last-photo d-flex" v-for="(info, index) in infos" :key="index">
@@ -44,6 +44,9 @@
 </template>
 
 <script>
+
+import AppImg from './AppImg.vue'
+
 export default {
     name: 'AppMain',
     data() {
@@ -65,8 +68,12 @@ export default {
                 ["Sites", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"]
             ]
         };
+    },
+    components:{
+        AppImg
     }
 }
+
 </script>
 
 
