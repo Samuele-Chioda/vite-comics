@@ -115,13 +115,14 @@ export default {
 p{
     color:white;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: .6rem;
     font-weight: bold;
 }
 
 img{
     width: 100%;
-    height: auto;
+    margin-bottom: .5rem;
+    height: 60%;
 }
 
 </style>

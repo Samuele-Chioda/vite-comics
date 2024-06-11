@@ -1,6 +1,9 @@
 <template>
 
     <main>
+        <div>
+            <AppJumbo imgSrc="../assets/img/img/jumbotron.jpg" /> 
+        </div>
         <div class="black-section">
             <AppImg />
         </div>
@@ -44,7 +47,7 @@
 </template>
 
 <script>
-
+import AppJumbo from './AppJumbo.vue'
 import AppImg from './AppImg.vue'
 
 export default {
@@ -70,7 +73,8 @@ export default {
         };
     },
     components:{
-        AppImg
+        AppImg,
+        AppJumbo
     }
 }
 
@@ -78,6 +82,7 @@ export default {
 
 
 <style lang="scss" scoped>
+
 .black-section {
     background-color: black;
     display: flex;
@@ -101,7 +106,6 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5rem;
     padding: 5rem;
 }
 
@@ -169,6 +173,5 @@ li {
 .d-flex{
     display:flex;
 }
-
 
 </style>
