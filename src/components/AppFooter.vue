@@ -64,5 +64,4 @@ img {
     margin-right: .5rem;
     width: 100%;
     padding: .5rem}
-
 </style>

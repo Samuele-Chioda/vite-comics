@@ -77,7 +77,6 @@ export default {
         AppJumbo
     }
 }
-
 </script>
 
 
@@ -96,7 +95,8 @@ export default {
 
 .center-section {
     background-image: url('../assets/img/img/footer-bg.jpg');
-    background-repeat: no-repeat;
+    background-position: cover;
+    background-repeat: repeat-x;
 }
 
 .blue-section {
